@@ -27,4 +27,9 @@ public class FlyManager : MonoBehaviour
     {
         transform.rotation = Quaternion.Euler(0, 0, rigidbody2D.linearVelocity.y * _rotateSpeed);
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        GameManager.Instance.GameOver();
+    }
 }
