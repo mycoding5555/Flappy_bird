@@ -22,4 +22,9 @@ public class FlyManager : MonoBehaviour
             rigidbody2D.linearVelocity = Vector2.up * _velocity;
         }
     }
+
+    private void FixedUpdate()
+    {
+        transform.rotation = Quaternion.Euler(0, 0, rigidbody2D.linearVelocity.y * _rotateSpeed);
+    }
 }
