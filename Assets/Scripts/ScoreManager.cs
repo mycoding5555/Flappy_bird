@@ -20,17 +20,17 @@ public class ScoreManager : MonoBehaviour
     void Start ()
     {
         _currentScore.text= score.ToString();
-        _higtScore.text= PlayerPrefs.GetInt("HighScore",0).ToString();
+        _higtScore.text= PlayerPrefs.GetInt("highScore",0).ToString();
         RefreshHightScore();
     }
 
   
     // Update is called once per frame
-    void RefreshHightScore()
+     private void RefreshHightScore()
     {
-        if (score > PlayerPrefs.GetInt("HighScore"))
+        if (score > PlayerPrefs.GetInt("highScore"))
         {
-            PlayerPrefs.SetInt("HighScore", score);
+            PlayerPrefs.SetInt("highScore", score);
             _higtScore.text = score.ToString();
         }
         
