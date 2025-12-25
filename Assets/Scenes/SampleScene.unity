@@ -1882,7 +1882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
   _currentScore: {fileID: 1152790378}
-  _higtScore: {fileID: 1923571027}
+  _highScore: {fileID: 1923571027}
 --- !u!1 &2088999425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2017,6 +2017,10 @@ PrefabInstance:
     - target: {fileID: 6035161715952183473, guid: f3377df6703224e4f9202767f9042837, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035161715952183473, guid: f3377df6703224e4f9202767f9042837, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
